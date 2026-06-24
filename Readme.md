@@ -11,7 +11,7 @@ Details of extending to multiorientation settings is given in:
 Data_generation.m 
 
 Sample multi orientation simulated dataset generated in this paper can be downloaded from: 
-https://indianinstituteofscience-my.sharepoint.com/:f:/g/personal/sejalm_iisc_ac_in/IgCTibTwQf6gS4yJry3u-ZVNAb51KzMTsHM0pACAsKjqKL0
+( will be updated later)
 
 In vivo 2016 QSM Challenge Dataset used in this paper:
 http://qsm.neuroimaging.at
@@ -26,13 +26,5 @@ THe file main.m compares COSMOS, NDI and OMNIS. It also calculates ROI Error alo
 
 
 ## Contact
-
-*Sejal Maisheri*
-
-PhD Scholar, IMI, IISc Bangalore, Email: sejalm@iisc.ac.in 
-
-
-*Prof. Phaneendra K. Yalavarthy*
-
-Professor, CDS, IISC Bangalore, Email: yalavarthy@iisc.ac.in
+Authors
 
