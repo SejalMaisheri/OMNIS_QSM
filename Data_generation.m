@@ -61,7 +61,7 @@ B0_dirs = [
 
  % Set SimParams{Protocol}.Output_dir as per where you want to save
  % Magnitude and Phase data for different echos. Subfolder name SimulatedHR
- % will be created inside that output_dir
+ % will be created inside that Output_dir
 
 % KEEP REST all parameters same like: 
  % 1) Chimap_file = 
@@ -110,7 +110,7 @@ B0_dirs = [
  % in Hz unit. 
  % Data_fieldmap is generated before Background field removal step, for
  % Challenge Protocol using BrainExtracted Region only, this is same as local
- % filed map. 
+ % field map. 
  % 2) unwrapping\Data_weights.nii.gz as Weighting Map
 
 
