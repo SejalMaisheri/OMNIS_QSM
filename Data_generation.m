@@ -248,10 +248,3 @@ gt = niftiread('...\data\chimodel\ChiModelMIX_noCalc.nii'); %For Sim1
 gt = (gt - mean(gt(mask == 1))) .* mask ;
 gt = single(gt);
 save(fullfile(output_path, 'Gt.mat'), 'gt','voxel_size', 'matrix_size' ,'-v7.3');
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Sample dataset ( Sim1Snr1) can be downloaded from: 
-% https://indianinstituteofscience-my.sharepoint.com/:f:/g/personal/sejalm_iisc_ac_in/IgCTibTwQf6gS4yJry3u-ZVNAb51KzMTsHM0pACAsKjqKL0
-
-% Contact mail given in Readme file for complete dataset. 
