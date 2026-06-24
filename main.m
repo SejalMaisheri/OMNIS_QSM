@@ -60,7 +60,7 @@ fprintf('Total Orientations: %d \n' , nd);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %COSMOS
-%Code taken from : 2016 QSM Challenge Private code 
+%Code taken from 2016 QSM Challenge code : http://qsm.neuroimaging.at
 disp('COSMOS')
 tic
 Phase_tissue = zeros(size(phs_use) , 'single');            
@@ -159,7 +159,7 @@ imagesc3d2(gt, N/2, 1, [90,90,90], scale_gt, [], 'GT')
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%NDI
+% NDI
 % Code taken from: https://github.com/polakd/NDI_Toolbox
 % Original step_size = 2 and num_iter = 200
 % Adjusted for simulated data to step_size = 0.1 and num_iter = 500
