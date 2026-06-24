@@ -22,7 +22,7 @@ img1_log = imfilter(img1, H, 'same');
 img2_log = imfilter(img2, H, 'same');
 
 
-hfen = rmse(img1_log, img2_log);
+hfen = compute_nrmse(img1_log, img2_log);
 
 
 end
