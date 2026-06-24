@@ -44,7 +44,7 @@ disp('data loaded')
 %Parameters
 B0 = 7;
 gyro = 42.57747892;
-nd = 6;                         % Total orientation to be used ( Max value = 8)
+nd = 8;                         % Total orientation to be used ( Max value = 8)
 N = size(mask);                 % (256,320,320)
 scale_gt = [-0.1, 0.1];         % For visualization
 
@@ -243,25 +243,19 @@ disp(['NDI:    nrmse ', num2str(rmse_ndi),'% psnr ', num2str(psnr_ndi), '% ssim 
 disp(['OMNIS:  nrmse ', num2str(rmse_omnis),'% psnr ', num2str(psnr_omnis), '% ssim ', num2str(ssim_omnis),'% hfen ', num2str(hfen_omnis), '%'])
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%ROI Error
-%Calculation based on: QSM 2016 challenge private code
+% ROI Reconstruction Error
+% Calculation based on QSM 2016 challenge code: http://qsm.neuroimaging.at
 
 brain_mask = mask;
 mask_path = 'Sim1Snr1/SegmentedModel.nii.gz';
-
-% Load NIfTI segmentation mask
 label_mask = niftiread(mask_path);
 label_mask = label_mask .* brain_mask;
-
-%% ----------- Apply Mask (vectorized) -----------
 
 wm_mask = (label_mask ~= 8);
 wm_px = sum(wm_mask(:));
 gm_mask = (label_mask == 9);
 gm_px = sum(gm_mask(:));
 
-
-% Store methods in struct
 methods = struct( ...
     'COSMOS', cos, ...
     'NDI',   x_ndi, ...
