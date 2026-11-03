@@ -4,7 +4,7 @@ Sejal Maisheri, Ambedkar Dukkipati, and Phaneendra K. Yalavarthy, "Optimized Ave
 
 OMNIS (Optimized Multi-orientation Nonlinear Inversion of Susceptibility) is a multi-orientation QSM (Quantitative Susceptibility Mapping) reconstruction method that integrates averaged Kaczmarz-style iterative updates with a nonlinear data fidelity formulation. It achieves improved reconstruction quality while reducing both computational burden and acquisition requirements, providing a practical and clinically viable framework for Multi Orientation QSM reconstruction. It also showcases the potential to serve as a reliable in vivo reference standard for evaluating single-orientation QSM reconstruction methods.
 
-This repository contains the official implementation of **OMNIS QSM** and a detailed description for generating the multi-orientation simulated dataset used in the study. 
+This repository contains the official implementation of **OMNIS QSM** and a detailed description for generating the multi-orientation simulated dataset used in this study. 
 
 ## Dataset
 
