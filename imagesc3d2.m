@@ -1,3 +1,6 @@
+% Code Taken from: 2016 QSM Challenge Codebase
+% Link: https://www.neuroimaging.at/pages/qsm.php
+
 function [  ] = imagesc3d2( img, pos, fig_num, rot_deg, scale_fig, avg_size, title_fig, MIP, axis_square )
 %IMAGESC3D Summary of this function goes here
 %   Detailed explanation goes here
