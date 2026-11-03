@@ -15,7 +15,7 @@ Details of extending to multiorientation settings are given in:
 `Data_generation.m` 
 
 Sample multi orientation simulated dataset generated for this study can be downloaded from: 
-( will be updated later)
+(will be updated later)
 
 In vivo 2016 QSM Challenge Dataset used in this study:
 http://qsm.neuroimaging.at
