@@ -3,15 +3,9 @@ Contains implementation of Multi-orientation QSM methods
 1)Cosmos
 2)Omnis
 3)NDI
-
-
 then ROI Error code
 
 %}
-
-
-
-
 
 %clearvars
 %close all
@@ -20,7 +14,7 @@ then ROI Error code
 
 
 %path to save output
-save_outputs = 1;  % 1: save , 0: ignore
+save_outputs = 0;  % 1: save , 0: ignore
 output_folder = 'Outputs/Sim1Snr1/';
 
 if ~exist(output_folder, 'dir')
@@ -161,7 +155,7 @@ imagesc3d2(gt, N/2, 1, [90,90,90], scale_gt, [], 'GT')
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % NDI
 % Code taken from: https://github.com/polakd/NDI_Toolbox
-% Original step_size = 2 and num_iter = 200
+% Original step_size = 2 and num_iter = 200 (Lead to divergence for simulated data)
 % Adjusted for simulated data to step_size = 0.1 and num_iter = 500
 % (Reason given in paper)
 
@@ -218,7 +212,7 @@ figure;
 imagesc3d2(x_ndi , N/2, 4, [90,90,90], scale_gt, [], 'NDI') 
 imagesc3d2(gt, N/2, 1, [90,90,90], scale_gt, [], 'GT')
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Saving
 if save_outputs == 1
     cos = single(cos);
@@ -242,7 +236,7 @@ disp(['COSMOS: nrmse ', num2str(rmse_cos),'% psnr ', num2str(psnr_cos), '% ssim 
 disp(['NDI:    nrmse ', num2str(rmse_ndi),'% psnr ', num2str(psnr_ndi), '% ssim ', num2str(ssim_ndi),'% hfen ', num2str(hfen_ndi), '%'])
 disp(['OMNIS:  nrmse ', num2str(rmse_omnis),'% psnr ', num2str(psnr_omnis), '% ssim ', num2str(ssim_omnis),'% hfen ', num2str(hfen_omnis), '%'])
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ROI Reconstruction Error
 % Calculation based on QSM 2016 challenge code: http://qsm.neuroimaging.at
 

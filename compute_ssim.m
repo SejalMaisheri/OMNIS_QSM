@@ -1,3 +1,6 @@
+% Code Taken from: 2016 QSM Challenge Codebase
+% Link: https://www.neuroimaging.at/pages/qsm.php
+
 function [mssim, ssim_map] = compute_ssim(img1, img2, sw, ind)
 
 %========================================================================

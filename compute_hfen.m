@@ -1,3 +1,6 @@
+% Code Taken from: 2016 QSM Challenge Codebase
+% Link: https://www.neuroimaging.at/pages/qsm.php
+
 function [ hfen ] = compute_hfen( img1, img2 )
  
 

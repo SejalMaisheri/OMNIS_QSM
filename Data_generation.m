@@ -1,4 +1,4 @@
-
+% Details of how to generate Multiori dataset from Single orientation RC2 framework data and code.
 
 
 % Single orientation RC2 framework data and code : https://doi.org/10.34973/m20r-jt17
