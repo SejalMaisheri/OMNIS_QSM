@@ -1,6 +1,6 @@
 # Optimized Averaged Kaczmarz Framework for Efficient Multi-Orientation Inversion in Quantitative Susceptibility Mapping
 
-Sejal Maisheri, Ambedkar Dukkipati, and Phaneendra K. Yalavarthy, "Optimized Averaged Kaczmarz Framework for Efficient Multi-Orientation Inversion in Quantitative Susceptibility Mapping," IEEE Transactions on Biomedical Engineering (2026). (in press)
+Sejal Maisheri, Ambedkar Dukkipati, and Phaneendra K. Yalavarthy, "[Optimized Averaged Kaczmarz Framework for Efficient Multi-Orientation Inversion in Quantitative Susceptibility Mapping](https://cds.iisc.ac.in/faculty/yalavarthy/Maisheri_IEEETBME_2026.pdf)," IEEE Transactions on Biomedical Engineering 2026 (in press). [doi: 10.1109/TBME.2026.3750953]
 
 OMNIS (Optimized Multi-orientation Nonlinear Inversion of Susceptibility) is a multi-orientation QSM (Quantitative Susceptibility Mapping) reconstruction method that integrates averaged Kaczmarz-style iterative updates with a nonlinear data fidelity formulation. It achieves improved reconstruction quality while reducing both computational burden and acquisition requirements, providing a practical and clinically viable framework for Multi Orientation QSM reconstruction. It also showcases the potential to serve as a reliable in vivo reference standard for evaluating single-orientation QSM reconstruction methods.
 
@@ -48,7 +48,9 @@ If you use OMNIS, multi-orientation simulation dataset, or any part of this stud
   author  = {Maisheri, Sejal and Dukkipati, Ambedkar and Yalavarthy, Phaneendra K.},
   journal = {IEEE Transactions on Biomedical Engineering},
   note    = {in press},
-  year    = {2026}
+  year    = {2026},
+  doi     = {10.1109/TBME.2026.3750953},
+  url     = {https://cds.iisc.ac.in/faculty/yalavarthy/Maisheri_IEEETBME_2026.pdf}
 }
 ```
 
